@@ -55,7 +55,7 @@ fi
 
 echo "Moving Files"
 cd ${backupFolder}
-if [ `ls ${backupPath}` ]
+if [ `ls ${backupPath} | tail -1` ]
 then
 	for f in *
 	do
