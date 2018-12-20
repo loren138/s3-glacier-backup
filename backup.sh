@@ -59,7 +59,7 @@ if [ `ls ${backupPath} | tail -1` ]
 then
 	for f in *
 	do
-		s3cmd sync ${f} s3://${s3bucket}/${backupFolder}/${f}
+		s3cmd put --storage-class=STANDARD_IA ${f} s3://${s3bucket}/${backupFolder}/${f}
 		rm ${f}
 	done
 else
