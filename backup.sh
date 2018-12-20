@@ -9,7 +9,7 @@ backupPath="$backupTo/$backupFolder"
 backupPassword="test" # You must specify a password
 
 # Folders to backup (name in backup folder path)
-declare -a folders=("documents $HOME/Documents" "downloads $HOME/Downloads" "desktop $HOME/Desktop");
+declare -a folders=("documents $HOME/Documents" "downloads $HOME/Downloads" "desktop $HOME/Desktop" "photos $HOME/Pictures" "sites $HOME/Sites");
 
 
 ## Script Starts here
